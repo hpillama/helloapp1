@@ -1,0 +1,16 @@
+#base image
+FROM node:lts-alpine
+
+# Copy build files
+COPY ./ ./
+
+#install dependancies
+RUN npm install
+
+#startup command
+CMD ["npm", "start"]
+
+
+
+
+
